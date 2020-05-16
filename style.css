@@ -69,7 +69,9 @@ h3 {
   font-size: 2rem;
   font-weight: 700;
 }
-/* 
-#points {
-  color: red;
-} */
+
+@media screen and (max-width: 800px) {
+  .square {
+    padding: 2rem;
+  }
+}
