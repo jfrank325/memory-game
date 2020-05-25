@@ -21,8 +21,9 @@ class Game {
   }
 
   roundStart() {
-    for (let i = 1; i < game.r; i++) {
-      game.arr.push(i);
+    let area = game.n * game.m;
+    while (game.arr.length < area) {
+      game.arr.push(Math.floor(Math.random() * area));
     }
     let squares = document.querySelectorAll('.square');
     squares.forEach(($square, i) =>
